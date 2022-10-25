@@ -1,0 +1,8 @@
+package dataAccess.Abstract;
+
+import entities.Instructor;
+
+public interface IInstructerDao {
+	void add(Instructor instructer)
+
+}

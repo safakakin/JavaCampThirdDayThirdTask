@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import business.Concrete.CategoryManager;
+import business.Concrete.CourseManager;
+import business.Concrete.InstructorManager;
+import core.logging.DatabaseLogger;
+import core.logging.FileLogger;
+import core.logging.ILogger;
+import dataAccess.Concrete.Hibernate.HibernateCategoryDao;
+import dataAccess.Concrete.Hibernate.HibernateInstructorDao;
+import dataAccess.Concrete.jdbc.JdbcCourseDao;
+import dataAccess.Concrete.jdbc.JdbcInstructorDao;
+import entities.Category;
+import entities.Course;
+import entities.Instructor;
+
+public class program {
+
+	public static void main(String[] args) {
+		List<ILogger> loggers = new ArrayList<ILogger>();
+        loggers.add(new DatabaseLogger());
+        loggers.add(new FileLogger());
+
+        Instructor instructor = new Instructor();
+        instructor.setInstructorId(1);
+        instructor.setName("Şafak");
+        instructor.setSurname("Akın");
+
+        InstructorManager instructorManager = new InstructorManager(new HibernateInstructorDao(), loggers);
+        instructorManager.add(instructor);
+
+        InstructorManager instructorManager1 = new InstructorManager(new JdbcInstructorDao(), loggers);
+        instructorManager1.add(instructor);
+
+        List<Course> courses = new ArrayList<>();
+
+        Course course = new Course();
+        course.setCourseId(1);
+        course.setCourseName("Java");
+        course.setCoursePrice(10); // If the course price is less than 0, an error is output to the console without any additions.
+
+        Course course1 = new Course();
+        course1.setCourseName("Java");
+
+        CourseManager courseManager = new CourseManager(new JdbcCourseDao(), courses, loggers);
+        courseManager.add(course);
+        // CourseManager.add(course1); // gives an error
+
+        List<Category> categories = new ArrayList<>();
+
+        Category category = new Category();
+        category.setCategoryId(1);
+        category.setCategoryName("oop");
+
+        Category category1 = new Category();
+        category1.setCategoryName("oop");
+
+        CategoryManager categoryManager = new CategoryManager(new HibernateCategoryDao(), categories, loggers);
+        categoryManager.add(category);
+        // categoryManager.add(category1); // gives an error
+
+	}
+
+}

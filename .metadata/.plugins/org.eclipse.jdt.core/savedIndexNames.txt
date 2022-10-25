@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/mariami/Desktop/KodlamaJavaCamp/.metadata/.plugins/org.eclipse.jdt.core
+2683778501.index
+1865797976.index
+4117191354.index

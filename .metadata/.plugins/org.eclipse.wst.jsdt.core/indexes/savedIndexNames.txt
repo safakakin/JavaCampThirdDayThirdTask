@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/Users/mariami/Desktop/KodlamaJavaCamp/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+412802784.index

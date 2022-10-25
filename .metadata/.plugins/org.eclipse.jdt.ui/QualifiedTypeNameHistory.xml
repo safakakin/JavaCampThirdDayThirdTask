@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="business.Abstract.IInstructorService"/>
+    <fullyQualifiedTypeName name="business.Abstract.ICourseService"/>
+    <fullyQualifiedTypeName name="business.Abstract.ICategoryService"/>
+    <fullyQualifiedTypeName name="dataAccess.Abstract.IInstructorDao"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="dataAccess.Abstract.ICourseDao"/>
+    <fullyQualifiedTypeName name="dataAccess.Abstract.ICategoryDao"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="core.logging.DatabaseLogger"/>
+    <fullyQualifiedTypeName name="core.logging.FileLogger"/>
+    <fullyQualifiedTypeName name="core.logging.ILogger"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="entities.Instructor"/>
+    <fullyQualifiedTypeName name="business.Concrete.InstructorManager"/>
+    <fullyQualifiedTypeName name="dataAccess.Concrete.Hibernate.HibernateInstructorDao"/>
+    <fullyQualifiedTypeName name="dataAccess.Concrete.jdbc.JdbcInstructorDao"/>
+    <fullyQualifiedTypeName name="entities.Course"/>
+    <fullyQualifiedTypeName name="business.Concrete.CourseManager"/>
+    <fullyQualifiedTypeName name="dataAccess.Concrete.jdbc.JdbcCourseDao"/>
+    <fullyQualifiedTypeName name="entities.Category"/>
+    <fullyQualifiedTypeName name="dataAccess.Concrete.Hibernate.HibernateCategoryDao"/>
+    <fullyQualifiedTypeName name="business.Concrete.CategoryManager"/>
+</qualifiedTypeNameHistroy>

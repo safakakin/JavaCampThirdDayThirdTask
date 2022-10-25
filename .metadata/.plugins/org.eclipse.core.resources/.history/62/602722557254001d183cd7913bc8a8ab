@@ -1,0 +1,5 @@
+package dataAccess.Concrete.Hibernate;
+
+public class HibernateCourseDao {
+
+}
